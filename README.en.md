@@ -7,6 +7,9 @@ in the Web settings page, and injects a directive into the assembled system
 prompt so the model answers in the configured language. Solves "user asks in
 Chinese but the model replies in English".
 
+> Part of the [dsh-plugins](https://github.com/DoiiarX/dsh-plugins) collection —
+> see that repository for the full index of self-built plugins.
+
 ## Contents
 
 - `index.js` (host side): registers the `user-language` settings namespace

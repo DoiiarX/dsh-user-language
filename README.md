@@ -6,6 +6,9 @@ DeepSeek Harness（DSH）应答语言插件：在 Web 设置页提供一个「�
 并据此在每次组装系统提示词时注入一条指令，让模型按配置的语言回答。
 解决"用户用中文提问、模型却用英文回答"的问题。
 
+> 本插件属于 [dsh-plugins](https://github.com/DoiiarX/dsh-plugins) 合集，
+> 完整的自研插件索引见该仓库。
+
 ## 组成
 
 - `index.js`（宿主端）：注册 `user-language` settings 命名空间（`language`
