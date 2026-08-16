@@ -15,7 +15,7 @@ DeepSeek Harness（DSH）应答语言插件：在 Web 设置页提供一个「�
   字段），并注册一个 `systemPrompt` 段落（`user:language`，order -90）。
   段落文本按当下 settings 里的语言求值；未配置语言时渲染为空并跳过。
 - `client.js`（浏览器端）：在设置页渲染「用户语言」小节，编辑 `language`。
-- `cordis.patch.yml`：声明 `pn-user-language` 插件行。
+- `cordis.patch.yml`：声明 `dsh-user-language` 插件行。
 - `package.json`：`@doiiarx/dsh-user-language` 包清单，声明 `dsh.client` 注入与
   `schemastery` 依赖。
 

@@ -13,7 +13,7 @@
  * 不会拖垮整个 profile。
  */
 
-export const name = 'pn-user-language'
+export const name = 'dsh-user-language'
 export const inject = ['settings', 'systemPrompt']
 
 const SETTINGS_NS = 'user-language'
@@ -21,8 +21,8 @@ const DEFAULT_LANGUAGE = '简体中文（Simplified Chinese）'
 
 function report(ctx, scope, error) {
   const detail = error instanceof Error ? `${error.name}: ${error.message}` : String(error)
-  const message = `[pn-user-language] ${scope} unavailable: ${detail}`
-  const logger = ctx.root?.logger?.('pn-user-language')
+  const message = `[dsh-user-language] ${scope} unavailable: ${detail}`
+  const logger = ctx.root?.logger?.('dsh-user-language')
   if (logger?.error) logger.error('%s', message)
   console.error(message)
 }

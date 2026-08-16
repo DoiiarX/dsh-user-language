@@ -18,7 +18,7 @@ Chinese but the model replies in English".
   assembly; when no language is configured it renders empty and is skipped.
 - `client.js` (browser side): renders the "User language" section in the
   settings page, editing `language`.
-- `cordis.patch.yml`: declares the `pn-user-language` plugin row.
+- `cordis.patch.yml`: declares the `dsh-user-language` plugin row.
 - `package.json`: the `@doiiarx/dsh-user-language` package manifest, declaring the
   `dsh.client` inject set and the `schemastery` dependency.
 
