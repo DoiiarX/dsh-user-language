@@ -1,12 +1,12 @@
 /**
- * @local/dsh-user-language —— 浏览器设置页（用户语言小节）。
- * 与 @local/dsh-weather-plugin 的 client.js 同一套加载模式：
+ * @doiiarx/dsh-user-language —— 浏览器设置页（用户语言小节）。
+ * 与 @doiiarx/dsh-weather-plugin 的 client.js 同一套加载模式：
  * `window.__ModuleLoader__.load` 注册浏览器端插件，绑定 `user-language`
  * settings 命名空间，渲染设置在 sidebar 的「用户语言」小节。
  * 保存后宿主端 systemPrompt 段落会在下一轮按新语言渲染。
  */
 window.__ModuleLoader__.load({
-  id: "@local/dsh-user-language",
+  id: "@doiiarx/dsh-user-language",
   factory: (require) => {
     const React = require("react");
     const inject = ["slots", "settingsScope", "connection", "remote"];

@@ -1,7 +1,7 @@
 /**
- * @local/dsh-user-language —— 应答语言设置 + 系统提示词注入插件（host 级）。
+ * @doiiarx/dsh-user-language —— 应答语言设置 + 系统提示词注入插件（host 级）。
  *
- * 双面包（与 @local/dsh-weather-plugin 同一套工作模式）：
+ * 双面包（与 @doiiarx/dsh-weather-plugin 同一套工作模式）：
  *   - 宿主端（本文件）：注册 `user-language` settings 命名空间（接受
  *     `language` 字段），并在 systemPrompt 注册一个段落。段落文本按当下
  *     settings 里的语言求值，所以用户在设置页改语言后，下一次组装系统

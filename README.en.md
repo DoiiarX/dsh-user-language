@@ -19,7 +19,7 @@ Chinese but the model replies in English".
 - `client.js` (browser side): renders the "User language" section in the
   settings page, editing `language`.
 - `cordis.patch.yml`: declares the `pn-user-language` plugin row.
-- `package.json`: the `@local/dsh-user-language` package manifest, declaring the
+- `package.json`: the `@doiiarx/dsh-user-language` package manifest, declaring the
   `dsh.client` inject set and the `schemastery` dependency.
 
 ## Install & wiring
@@ -39,12 +39,12 @@ In `$HOME/.dsh/profiles/web/package.json`:
 ```json
 {
   "dependencies": {
-    "@local/dsh-user-language": "link:<absolute path to this plugin directory>"
+    "@doiiarx/dsh-user-language": "link:<absolute path to this plugin directory>"
   },
   "dsh": {
     "profile": {
       "bundles": [
-        "@local/dsh-user-language"
+        "@doiiarx/dsh-user-language"
       ]
     }
   }
@@ -89,6 +89,6 @@ something else (e.g. English / 日本語); the next reply switches after saving.
 
 - The system prompt itself is not shown in the conversation UI; "I don't see
   the language paragraph in the chat" does not mean it is not injected.
-- `client.js` follows the usual DSH `@local/` plugin browser loading pattern
+- `client.js` follows the usual DSH `@doiiarx/` plugin browser loading pattern
   (`window.__ModuleLoader__.load` + the `settings.section` slot), paired with
   the host-side settings namespace.
